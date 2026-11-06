@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat Ball Stump Game</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bat Ball Stump Game</h1>
+    <button onclick="
+    let randomNumber= Math.random()*3;
+    let computerCoice;
+    if(randomNumber>0 && randomNumber<=1){
+        computerCoice = 'Bat';
+    }else if(randomNumber>1 && randomNumber<=2){
+        computerCoice='Ball';
+    }else{
+        computerCoice = 'Stump';
+    }
+    let resultMsg;
+    if(computerCoice ==='Ball'){
+        resultMsg = 'User Won';
+    }else if(computerCoice === 'Bat'){
+        resultMsg = `It's a tie`;
+    }else if(computerCoice === 'Stump'){
+        resultMsg = 'Computer has Won';
+    }
+    alert(`You have chosen Bat. Computer choice is ${computerCoice} and ${resultMsg}`);
+
+
+    
+    
+    ">Bat</button>
+    <button>Ball</button>
+    <button>Stump</button>
+</body>
+</html>
