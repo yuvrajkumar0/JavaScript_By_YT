@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crete a method to check if a number is odd or even</title>
+</head>
+<body>
+    
+    <script>
+        function checkEvenOrOdd(num){
+            if(num % 2===0){
+                return 'Even';
+
+            }else{
+                return 'Odd';
+            }
+        }
+         console.log(checkEvenOrOdd('25'));
+
+            function findLarge(num1, num2){
+                if(num1>num2){
+                    console.log(`your largest number is ${num1}`);
+                }else if(num1<num2){
+                    console.log(`your largest number is ${num2}`);
+                }else{
+                    console.log('both number are same');
+                }
+                
+            }
+
+             findLarge(21,23);
+
+             function CelsiusToFahrenheit(c){
+                let f = (9/5)*c+32;
+                console.log(f);
+             }
+             CelsiusToFahrenheit(12);
+    </script> 
+</body>
+</html>
