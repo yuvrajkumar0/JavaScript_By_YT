@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+        // let product = {
+        //    company: 'mango',
+        //     price: 745,
+        //     name: 'T-shirt',
+        // };
+        // console.log(product.company);
+        // console.log(product.name);
+        // console.log(product);
+        // product.company = 'Apple';
+        // console.log(product.company);
+        // console.log(product['name']); 
+        // delete product.company;
+        // console.log(product);
+
+        // let product = {
+        //    company: 'mango',
+        //     price: 745,
+        //     name: 'T-shirt',
+        //     displayPrice: function (){
+        //         console.log(`price of the product ₹ ${this.price}`)
+        //     }
+        // };
+        // product.displayPrice();
+
+         let product = {
+           company: 'mango',
+            price: 745,
+            name: 'T-shirt',
+         };
+        // Destructuring 
+         let {company} = product;
+         console.log(company);
+        //  let {price}=product;
+        //  console.log(price);
+        let{price,name} = product;
+        console.log(price);
+        console.log(name);
+
+
+    </script>
+</body>
+</html>
