@@ -11,10 +11,16 @@
         let sum = function(num1, num2){
             return num1+num2;
         }
-        let newSum = sum;
-        console.log(sum(4,9));
-         console.log(newSum(4,19));
-          console.log(sum(24,9));
+        // let newSum = sum;
+        // console.log(sum(4,9));
+        //  console.log(newSum(4,19));
+        //   console.log(sum(24,9));
+
+        let sumThreeNumbers = function(num1, num2,num3,sumTwoNumbers){
+            let sum1 = sumTwoNumbers(num1,num2);
+            return sumTwoNumbers(sum1,num3);
+        }
+        console.log(sumThreeNumbers(4,5,6,sum));
 
         
     </script>
