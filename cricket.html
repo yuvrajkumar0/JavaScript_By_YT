@@ -31,12 +31,53 @@
         resultMsg = 'Computer has Won';
     }
     alert(`You have chosen Bat. Computer choice is ${computerCoice} and ${resultMsg}`);
-
-
-    
-    
     ">Bat</button>
-    <button>Ball</button>
-    <button>Stump</button>
+
+
+
+    <button onclick="
+      randomNumber= Math.random()*3;
+      computerCoice;
+    if(randomNumber>0 && randomNumber<=1){
+        computerCoice = 'Bat';
+    }else if(randomNumber>1 && randomNumber<=2){
+        computerCoice='Ball';
+    }else{
+        computerCoice = 'Stump';
+    }
+      resultMsg;
+    if(computerCoice ==='Ball'){
+        resultMsg = `It's a tie`;
+    }else if(computerCoice === 'Bat'){
+        resultMsg = `Computer has Won`;
+    }else if(computerCoice === 'Stump'){
+        resultMsg = 'User has Won';
+    }
+    alert(`You have chosen Ball. Computer choice is ${computerCoice} and ${resultMsg}`);
+    ">Ball</button>
+
+
+    <button onclick="
+     randomNumber= Math.random()*3;
+     computerCoice;
+    if(randomNumber>0 && randomNumber<=1){
+        computerCoice = 'Bat';
+    }else if(randomNumber>1 && randomNumber<=2){
+        computerCoice='Ball';
+    }else{
+        computerCoice = 'Stump';
+    }
+     resultMsg;
+    if(computerCoice ==='Ball'){
+        resultMsg = 'User has won';
+    }else if(computerCoice === 'Bat'){
+        resultMsg = `Computer has won`;
+    }else if(computerCoice === 'Stump'){
+        resultMsg = `It's a tie`;
+    }
+    alert(`You have chosen stump. Computer choice is ${computerCoice} and ${resultMsg}`);
+    "
+    >Stump</button>
+     
 </body>
 </html>
